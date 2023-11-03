@@ -1,0 +1,16 @@
+https://github.com/marellec/COM421-Project-1
+I chose to break each module into separate pages by the given 
+header hierarchy. The case studies are separated into divs with a 
+contrasting style to stand out from the blocks of text.
+I decided that the sidebars should be inline 
+with the text instead of having a separate column for them or 
+having them break up the sequence of the text. My header styling 
+for the module navigation page is a little more complicated 
+than needed, so I would have simplified the styling if I 
+had more time. The navigation pages for the modules and home page 
+are simple lists with little styling, but the ones with subheaders 
+at least show the structure using subbullet points. I would have 
+added some floating buttons to the modules so that users can flip 
+to the next/previous page instead of clicking on the side navigation. 
+I would also add a home button to the module pages so the user can 
+click once to exit the entire module.
