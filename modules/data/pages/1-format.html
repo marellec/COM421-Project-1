@@ -21,106 +21,104 @@
 <body>
 
 <div class="sidebar">
-    <p><a class="back" href="../index.html">Module Home</a></p>
+    <p><a class="back" href="../index.html">Data: Home</a></p>
     <p><a class="active" href="1-format.html">Format Data</a></p>
     <p><a href="2-descriptive.html">Descriptive Statistics</a></p>
     <p><a href="3-inferential.html">Inferential Statistics</a></p>
 </div>
     
-<div id="page">
+<main class="right-side">
 
-    <h1>
-        Format data for analysis
-    </h1>
+    <header>
+        <h1>
+            Format data for analysis
+        </h1>
+    </header>
 
-    <section id="sec1">
-    <!-- <h2></h2> -->
-    <div class="contrast-box">
-        <p>
-            Make sure the computer you are working on has Microsoft Excel installed. 
-            Open the document 
-            <a href="../../../tutorial_spreadsheet.xlsx">ToolBox_DataLesson.xls</a> <!-- [[[NOTE: NEED LINK TO DOWNLOAD TUTORIAL EXCEL FILE]]]  -->
-            in Excel and follow along with the lesson, taking action as instructed.
-        </p>
-
-        <p>
-            In the Raw_Dataset spreadsheet, the name of each variable has been entered in the first row of each column.
-        </p>
-
-        <ol>
-            <li><p>Each variable name must be different from other variable names.</p></li>
-            <li><p>The first variable (in column A) is a <strong>unique identifier</strong>.</p></li>
-            <li><p>Variable names must start with a letter (not numbers or special characters), so change <em>4tutorial_types</em> to <em>tutorial_types.</em></p></li>
-            <li><p>Name variables so that they are intuitive to you. Therefore, change <em>use</em> and <em>useful</em> to <em>perc_ease_of_use</em> and <em>perc_usefulness</em>, respectively.</p></li>
-            <li><p>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to <em>Perceived Usefulness</em> and Column G refers to <em>Perceived Ease of Use.</em></p></li>
-        </ol>
-    </div>
-
-    <figure>
-        <img src="../../../illustrations/datalesson_fig3.png" alt="Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.">
-        <figcaption><p>Figure 1: Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</p></figcaption>
-    </figure>
-    </section>
-
-    <section id="sec2">
-    <!-- <h2></h2> -->
-
-    <div class="contrast-box">
-        <p>
-            Data values, or rows, have been input for each subject in the experiment.
-        </p>
-
-        <ol>
-            <li><p>Decide on input conventions and stick to them. In <em>gender</em>, change the "female" value to "F".</p></li>
-            <li><p>Separate data into component values whenever possible by adding new columns. For example, <em>tasks_completed values</em> (Y/Y/N) can be broken up into three components. So, add columns <em>task1</em>, <em>task2</em>, and <em>task3</em>, and reformat values appropriately.</p></li>
-            <li><p>Double-check to ensure no data entry errors have been made, then delete the old <em>tasks_completed</em> column.</p></li>
-            <li><p>Your Raw_Dataset spreadsheet should now look like Figure 2.</p></li>
-        </ol>
-    </div>
-
-    <figure>
-        <img src="../../../illustrations/datalesson_fig2.png" alt="Values for each variable are entered in a consistent format.">
-        <figcaption><p>Figure 2: Values for each variable are entered in a consistent format.</p></figcaption>
-    </figure>
-    </section>
-
-    <section id="sec3">
-    <!-- <h2></h2> -->
-    
-    <div class="contrast-box">
-
-        <p>
-            Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. 
-            This makes the categorical values <strong>dichotomous</strong>, which gives the researcher maximum flexibility in testing for relationships or correlations.
-        </p>
-
-        <aside>
-            <h3></h3>
-            
+    <article>
+        <div class="contrast-box">
             <p>
-                Dichotomous variables allow for the easy isolation of characteristics for analysis. 
-                For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.
+                Make sure the computer you are working on has Microsoft Excel installed. 
+                Open the document 
+                <a href="../../../tutorial_spreadsheet.xlsx">ToolBox_DataLesson.xls</a> <!-- [[[NOTE: NEED LINK TO DOWNLOAD TUTORIAL EXCEL FILE]]]  -->
+                in Excel and follow along with the lesson, taking action as instructed.
             </p>
-        </aside>
-        
+
+            <p>
+                In the Raw_Dataset spreadsheet, the name of each variable has been entered in the first row of each column.
+            </p>
+
             <ol>
-                <li><p>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</p></li>
-                <li><p>In the Formatted_Data sheet, add new columns with <strong>Insert > Columns</strong> for each distinct value in categorical data columns (<em>tutorial_types</em>, <em>gender</em>, <em>exp_level</em>, <em>task1</em>, <em>task2</em>, and <em>task3</em>). You do not have to add a new column for <em>task1</em>, <em>task2</em>, and <em>task3</em> because their values are already dichotomous.</p></li>
-                <li><p>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</p></li>
-                <li><p>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <strong>Edit > Replace</strong>.</p></li>
-                <li><p>Your Raw_Dataset spreadsheet should now look like Figure 3.</p></li>
+                <li><p>Each variable name must be different from other variable names.</p></li>
+                <li><p>The first variable (in column A) is a <strong>unique identifier</strong>.</p></li>
+                <li><p>Variable names must start with a letter (not numbers or special characters), so change <em>4tutorial_types</em> to <em>tutorial_types.</em></p></li>
+                <li><p>Name variables so that they are intuitive to you. Therefore, change <em>use</em> and <em>useful</em> to <em>perc_ease_of_use</em> and <em>perc_usefulness</em>, respectively.</p></li>
+                <li><p>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to <em>Perceived Usefulness</em> and Column G refers to <em>Perceived Ease of Use.</em></p></li>
             </ol>
+        </div>
 
-    </div>
-    
+        <figure>
+            <img src="../../../illustrations/datalesson_fig3.png" alt="Data arrayed in columns where tutorial type, gender, experience, and task categorical values are dichotomous variables.">
+            <figcaption><p>Figure 1: Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</p></figcaption>
+        </figure>
+        
 
-    <figure>
-        <img src="../../../illustrations/datalesson_fig3 (1).png" alt="Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.">
-        <figcaption><p>Figure 3: Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</p></figcaption>
-    </figure>
-    </section>
+        <div class="contrast-box">
+            <p>
+                Data values, or rows, have been input for each subject in the experiment.
+            </p>
+
+            <ol>
+                <li><p>Decide on input conventions and stick to them. In <em>gender</em>, change the "female" value to "F".</p></li>
+                <li><p>Separate data into component values whenever possible by adding new columns. For example, <em>tasks_completed values</em> (Y/Y/N) can be broken up into three components. So, add columns <em>task1</em>, <em>task2</em>, and <em>task3</em>, and reformat values appropriately.</p></li>
+                <li><p>Double-check to ensure no data entry errors have been made, then delete the old <em>tasks_completed</em> column.</p></li>
+                <li><p>Your Raw_Dataset spreadsheet should now look like Figure 2.</p></li>
+            </ol>
+        </div>
+
+        <figure>
+            <img src="../../../illustrations/datalesson_fig2.png" alt="Data arrayed in columns where each value is formatted consistently with hte variable.">
+            <figcaption><p>Figure 2: Values for each variable are entered in a consistent format.</p></figcaption>
+        </figure>
+        
+
+        
+        <!-- <h2></h2> -->
+        
+        <div class="contrast-box">
+
+            <p>
+                Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. 
+                This makes the categorical values <strong>dichotomous</strong>, which gives the researcher maximum flexibility in testing for relationships or correlations.
+            </p>
+
+            <aside>
+                <h3></h3>
+                
+                <p>
+                    Dichotomous variables allow for the easy isolation of characteristics for analysis. 
+                    For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.
+                </p>
+            </aside>
+            
+                <ol>
+                    <li><p>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</p></li>
+                    <li><p>In the Formatted_Data sheet, add new columns with <strong>Insert > Columns</strong> for each distinct value in categorical data columns (<em>tutorial_types</em>, <em>gender</em>, <em>exp_level</em>, <em>task1</em>, <em>task2</em>, and <em>task3</em>). You do not have to add a new column for <em>task1</em>, <em>task2</em>, and <em>task3</em> because their values are already dichotomous.</p></li>
+                    <li><p>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</p></li>
+                    <li><p>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <strong>Edit > Replace</strong>.</p></li>
+                    <li><p>Your Raw_Dataset spreadsheet should now look like Figure 3.</p></li>
+                </ol>
+
+        </div>
+        
+
+        <figure>
+            <img src="../../../illustrations/datalesson_fig3 (1).png" alt="Data arrayed in columns where tutorial type, gender, experience, and task categorical values are dichotomous variables.">
+            <figcaption><p>Figure 3: Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</p></figcaption>
+        </figure>
+    </article>
     
-</div>
+</main>
 
 </body>
 

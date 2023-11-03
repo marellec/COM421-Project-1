@@ -1,29 +1,6 @@
 /* Example CSS page to demonstrate styles and positioning */
 /* Notice the comments and organization. This makes it easier to locate and edit styles. */
 
-/* Colors */
-
-:root {
-    --white: white;
-    --light: #c9c5c3;
-    --medium: #ada7a4;
-    --dark: #6F6866; /* grey; */
-    --black: #38302E; /* black; */
-
-    --light-color: #CCDAD1; /* lightblue; */
-    --medium1-color: #9CAEA9; /* rgb(105, 152, 167); */
-    --medium2-color: #6c8282;
-    --medium3-color: #4f6363; /* rgb(0, 98, 128); */
-    --dark-color: #123c41;
-}
-
-
-/* Fonts */
-
-@font-face {
-    font-family: Dosis;
-    src: url(Dosis/Dosis-VariableFont_wght.ttf);
-}
 
 
 html {
@@ -31,7 +8,7 @@ height: 100%;
 }
 
 body {
-background-color: var(--light);
+background-color: lightgray;
 min-height: 100%;
 overflow-x:hidden;
 }
@@ -42,9 +19,9 @@ overflow-x:hidden;
 
 
 div.module-heading {
-width: 75%;
+width: 80%;
 height: 100%;
-/* margin-left: 25%;
+/* margin-left: 20%;
 margin-right: 0px;
 padding-left: 0px;
 padding-right: 0px; */
@@ -55,39 +32,30 @@ display: flex;
 
 div.home-button {
 margin: 0;
-margin-left: 1%;
+margin-left: -10px;
 padding: 0;
-/* padding-top: 30px; */
+padding-top: 30px;
 width: 20%;
 float: left;
 height: 100%;
 overflow: auto;
-/* overflow-x: hidden; */
-border-top-left-radius: 4rem;
-border-top-right-radius: 1rem;
-border-bottom-left-radius: 1rem;
-border-bottom-right-radius: 4rem;
+overflow-x:hidden;
 }
 
 div.sidebar {
 margin: 0;
-margin-top: 2%;
-margin-left: 1%;
+margin-left: -10px;
 padding: 0;
 width: 20%;
-background-color: var(--light-color);
+background-color: lightblue;
 position: fixed;
 height: 90%;
 overflow: auto;
-overflow-x: hidden;
-border-top-left-radius: 3rem;
-border-top-right-radius: 1.25rem;
-border-bottom-left-radius: 1.25rem;
-border-bottom-right-radius: 3rem;
+overflow-x:hidden;
 }
 
-
 div.contrast-box {
+background-color: rgb(170, 170, 170);
 margin-top: 40px;
 margin-bottom: 40px;
 margin-left: 20px;
@@ -96,11 +64,6 @@ padding-top: 15px;
 padding-bottom: 10px;
 padding-left: 10px;
 padding-right: 15px;
-background-color: var(--medium);
-border-top-left-radius: 4rem;
-border-top-right-radius: 1rem;
-border-bottom-left-radius: 1rem;
-border-bottom-right-radius: 4rem;
 }
 
 /* FIX probably isn't correct anymore */
@@ -116,7 +79,7 @@ margin-top: 0px;
 div.contrast-box > h3 {
 margin-top: 15px;
 background-color: rgba(0, 0, 0, 0);
-color:  var(--black);
+color: black;
 font-size: 135%;
 }
 
@@ -126,8 +89,8 @@ font-size: 135%;
 
 
 main.right-side {
-width: 75%;
-margin-left: 24%;
+width: 80%;
+margin-left: 20%;
 margin-right: 0;
 padding-bottom: 150px;
 padding-left: 0px;
@@ -135,8 +98,8 @@ padding-right: 0px;
 }
 
 main.center {
-width: 95%;
-margin-left: 2%;
+width: 100%;
+margin-left: 0;
 margin-right: 0px;
 padding-top: 10px;
 padding-bottom: 150px;
@@ -149,25 +112,6 @@ padding-right: 0px;
 /* Header styles */
 
 
-div.module {
-width: 100%;
-height: fit-content;
-margin: 0;
-padding-top: 0;
-padding-left: 0;
-padding-right: 0;
-padding-bottom: 2.5%;
-display: flex;
-align-items: center;
-}
-
-body > header > div.module {
-margin-top: 1.5%;
-height: 100px;
-}
-
-
-
 header {
 width: 100%;
 height: fit-content;
@@ -175,9 +119,11 @@ margin: 0;
 padding-top: 0;
 padding-left: 0;
 padding-right: 0;
-padding-bottom: 0;
-display: flex;
-align-items: center;
+}
+
+body > header {
+margin-top: 1.5%;
+height: 100px;
 }
 
 header.module {
@@ -190,7 +136,7 @@ padding-bottom: 2.5%;
 
 
 p {
-font-family: "Dosis","Helvetica","Arial","sans-serif";
+font-family: "Arial","sans-serif";
 font-size: 110%;
 margin-bottom: 20px;
 padding-left: 20px;
@@ -214,20 +160,16 @@ font-weight: bold;
 code {
 font-family: "consolas","monospace";
 font-size: 90%;
-color: var(--dark);
+color: gray;
 }
 
 blockquote {
 margin: 10px 45px 10px 45px;
 padding: 5px;
-background-color: var(--light-color);
-color: var(--dark);
-font-family: "Dosis","Helvetica","Arial","sans-serif";
+background-color: lightblue;
+color: grey;
+font-family: "Helvetica","Arial","sans-serif";
 text-align: center;
-border-top-left-radius: 4rem;
-border-top-right-radius: 1rem;
-border-bottom-left-radius: 1rem;
-border-bottom-right-radius: 4rem;
 }
 
 
@@ -238,10 +180,6 @@ border-bottom-right-radius: 4rem;
 div.home-button > p {
 margin: 0;
 height: 100%;
-padding-top: 5%;
-padding-bottom: 5%;
-padding-left: 10%;
-padding-right: 10%;
 }
 
 div.home-button a {
@@ -259,20 +197,19 @@ line-height: 165%;
 }
 
 div.home-button a.back {
-background-color: var(--dark);
-color: var(--white);
+background-color: gray;
+color: white;
 }
 
 div.home-button a.back:hover {
-background-color:  var(--black);
-color: var(--light-color);
+background-color: black;
+color: lightblue;
 }
 
 
 
 div.sidebar > p {
 margin: 0;
-/* padding: 0; */
 }
 
 div.sidebar a {
@@ -281,7 +218,7 @@ margin-left: -20px;
 margin-right: -20px;
 display: flex;
 align-items: center;
-color:  var(--black);
+color: black;
 padding-top: 5%;
 padding-bottom: 5%;
 padding-left: 10%;
@@ -292,40 +229,36 @@ line-height: 165%;
 }
 
 div.sidebar a.active {
-background-color: var(--medium2-color);
-color: var(--light-color);
+background-color: rgb(0, 98, 128);
+color: lightblue;
 }
 
 div.sidebar a.back {
 height: 100px;
-background-color: var(--dark);
-color: var(--white);
+background-color: gray;
+color: white;
 }
 
 div.sidebar a:hover:not(.active) {
-background-color: var(--white);
-color: var(--medium2-color);
+background-color: white;
+color: rgb(0, 98, 128);
 }
 
 div.sidebar a.back:hover {
-background-color:  var(--black);
-color: var(--light-color);
+background-color: black;
+color: lightblue;
 }
 
 a {
-color: var(--medium3-color);
-font-weight: 600;
+color: rgb(0, 98, 128);
+font-weight: bold;
 text-decoration: none;
-}
-
-div.contrast-box a {
-color: var(--dark-color);
 }
 
 a:hover,
 a:active,
 a:focus {
-color: var(--white);
+color: white;
 }
 
 
@@ -337,41 +270,34 @@ h1 {
 width: 100%;
 height: 100%;
 margin-left: -10px;
-padding: 0;
-padding-left: 3%;
+/* padding: 20px 0; */
+padding-left: 30px;
 display: flex;
 align-items: center;
-/* border-bottom:s solid 10px var(--dark);
-border-top: solid 10px var(--dark); */
-font-variant: normal;
-font-family: "Dosis","Helvetica","Arial","sans-serif";
-font-weight: 600;
+/* border-bottom: solid 10px gray;
+border-top: solid 10px gray; */
+font-family: "Helvetica","Arial","sans-serif";
 font-size: 250%;
-/* background-color: var(--light-color); */
+/* background-color: lightblue; */
 }
 
 main.right-side > header > h1 {
-padding-top: 4%;
-padding-bottom: 2%;
+padding-top: 5%;
 }
 
 h2 {
-width: 100%;
+width: 97.1%;
 margin-top: 20px;
 margin-bottom: 20px;
 margin-left: -10px;
 padding-top: 15px;
 padding-bottom: 15px;
-padding-left: 5%;
+padding-left: 30px;
 padding-right: 30px;
-font-variant: normal;
-font-family: "Dosis","Helvetica","Arial","sans-serif";
-font-weight: 600;
+font-family: "Helvetica","Arial","sans-serif";
 font-size: 150%;
-color: var(--light-color);
-background-color: var(--dark);
-border-top-left-radius: 5rem;
-border-bottom-left-radius: 2rem;
+color: lightblue;
+background-color: gray;
 }
 
 
@@ -384,15 +310,10 @@ padding-top: 5px;
 padding-bottom: 5px;
 margin-left: 0px;
 text-align: center;
-color: var(--medium3-color);
-font-family: "Dosis","Helvetica","Arial","sans-serif";
+color: rgb(0, 98, 128);
+font-family: "Helvetica","Arial","sans-serif";
 font-weight: bold;
-font-size: 125%;
-background-color: var(--light-color);
-border-top-left-radius: 4rem;
-border-top-right-radius: 1.5rem;
-border-bottom-left-radius: 1.5rem;
-border-bottom-right-radius: 4rem;
+background-color: lightblue;
 }
 
 
@@ -436,12 +357,12 @@ img {
 width: 90%;
 height: auto;
 display: block;
-margin-top: 5%;
-margin-bottom: 5%;
-/* padding: 10px; */
-border: solid 10px var(--light);
-border-radius: 0.5rem;
-box-shadow: -6px 6px 10px var(--black);
+margin-top: 20px;
+margin-bottom: 10px;
+margin-right: auto;
+margin-left: auto;
+padding: 10px;
+border: solid 3px gray;
 }
 
 
@@ -458,24 +379,16 @@ margin-bottom: 0.5rem;
 padding-left: 0.5rem;
 padding-right: 0.5rem;
 float: right;
-box-shadow: inset 8px 0 5px -5px var(--medium3-color);
+box-shadow: inset 5px 0 5px -5px rgb(0, 98, 128);
 font-style: italic;
-font-weight: 600;
-color: var(--medium3-color);
-border-top-left-radius: 0rem;
-border-bottom-left-radius: 0rem;
-}
-
-div.contrast-box > aside {
-box-shadow: inset 5px 0 5px -5px var(--dark-color);
-color: var(--dark-color);
+color: rgb(0, 98, 128);
 }
 
 header + main.center > aside {
 margin-top: 0.8rem;
 }
 
-header + article > div.contrast-box > aside {
+h1 + section > div.contrast-box > aside {
 margin-top: 0.8rem;
 }
 
@@ -499,12 +412,8 @@ margin: 0.5rem;
 
 aside > h3 {
 margin-top: 5px;
-margin-left: 2%;
-width: 95%;
 }
-div.contrast-box > aside > h3 {
-background-color: var(--medium2-color);
-}
+
 
 
 
