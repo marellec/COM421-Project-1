@@ -61,8 +61,8 @@ padding: 0;
 width: 20%;
 float: left;
 height: 100%;
-overflow: auto;
-/* overflow-x: hidden; */
+/* overflow: auto; */
+overflow: hidden;
 border-top-left-radius: 4rem;
 border-top-right-radius: 1rem;
 border-bottom-left-radius: 1rem;
